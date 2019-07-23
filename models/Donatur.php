@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\base\Model;
+use yii\web\UploadedFile;
 
 /**
  * This is the model class for table "donatur".
@@ -26,6 +28,7 @@ class Donatur extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $imageFile;
     public static function tableName()
     {
         return 'donatur';
@@ -43,7 +46,22 @@ class Donatur extends \yii\db\ActiveRecord
             [['nama', 'username', 'foto'], 'string', 'max' => 45],
             [['password', 'email'], 'string', 'max' => 30],
             [['hp'], 'string', 'max' => 15],
+            [['imageFile'], 'file',
+                'extensions' => 'jpg,jpeg,png,gif',
+                'maxSize' => '10000000', //max 1 GB
+                'skipOnEmpty' => false,
+            ],
         ];
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) {
+            $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**

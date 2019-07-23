@@ -76775,3 +76775,2079 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1563500843.237
     'REQUEST_TIME' => 1563500843
 ]
+2019-07-20 04:23:53 [::1][-][dbbd4msa52hj8ccvs4lp6de323][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\FileValidator::extension in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('extension', 'jpg,png,gif')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\validators\FileValidator), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/validators/Validator.php(227): yii\BaseYii::createObject(Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(468): yii\validators\Validator::createValidator('yii\\validators\\...', Object(app\models\Donatur), Array, Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(420): yii\base\Model->createValidators()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(189): yii\base\Model->getValidators()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(816): yii\base\Model->scenarios()
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(434): yii\base\Model->activeAttributes()
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(494): yii\base\Model->getActiveValidators('nama')
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(926): yii\base\Model->isAttributeRequired('nama')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(402): yii\widgets\ActiveField->addAriaAttributes('<span class="st...')
+#15 /var/www/html/dopen/views/donatur/_form.php(16): yii\widgets\ActiveField->textInput('<span class="st...')
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#19 /var/www/html/dopen/views/donatur/update.php(18): yii\base\View->render('_form', Array)
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#21 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#22 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonaturController))
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\DonaturController))
+#24 /var/www/html/dopen/controllers/DonaturController.php(101): yii\base\Controller->render('update', Array)
+#25 [internal function]: app\controllers\DonaturController->actionUpdate('1')
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#29 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donatur/update', Array)
+#30 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#32 {main}
+2019-07-20 04:23:53 [::1][-][dbbd4msa52hj8ccvs4lp6de323][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    '_csrf' => '294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f\";}'
+    'PHPSESSID' => 'dbbd4msa52hj8ccvs4lp6de323'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; _csrf=294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f%22%3B%7D; PHPSESSID=dbbd4msa52hj8ccvs4lp6de323'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '43296'
+    'REDIRECT_URL' => '/dopen/web/donatur/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/dopen/web/donatur/update?id=1'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563596633.186
+    'REQUEST_TIME' => 1563596633
+]
+2019-07-20 04:24:37 [::1][-][dbbd4msa52hj8ccvs4lp6de323][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\FileValidator::extension in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('extension', 'jpg,png,gif')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\validators\FileValidator), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/validators/Validator.php(227): yii\BaseYii::createObject(Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(468): yii\validators\Validator::createValidator('yii\\validators\\...', Object(app\models\Donatur), Array, Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(420): yii\base\Model->createValidators()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(189): yii\base\Model->getValidators()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(816): yii\base\Model->scenarios()
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(434): yii\base\Model->activeAttributes()
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(494): yii\base\Model->getActiveValidators('nama')
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(926): yii\base\Model->isAttributeRequired('nama')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(402): yii\widgets\ActiveField->addAriaAttributes('<span class="st...')
+#15 /var/www/html/dopen/views/donatur/_form.php(16): yii\widgets\ActiveField->textInput('<span class="st...')
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#19 /var/www/html/dopen/views/donatur/update.php(18): yii\base\View->render('_form', Array)
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#21 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#22 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonaturController))
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\DonaturController))
+#24 /var/www/html/dopen/controllers/DonaturController.php(101): yii\base\Controller->render('update', Array)
+#25 [internal function]: app\controllers\DonaturController->actionUpdate('1')
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#29 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donatur/update', Array)
+#30 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#32 {main}
+2019-07-20 04:24:37 [::1][-][dbbd4msa52hj8ccvs4lp6de323][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    '_csrf' => '294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f\";}'
+    'PHPSESSID' => 'dbbd4msa52hj8ccvs4lp6de323'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; _csrf=294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f%22%3B%7D; PHPSESSID=dbbd4msa52hj8ccvs4lp6de323'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '43300'
+    'REDIRECT_URL' => '/dopen/web/donatur/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/dopen/web/donatur/update?id=1'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563596677.185
+    'REQUEST_TIME' => 1563596677
+]
+2019-07-20 04:24:43 [::1][-][dbbd4msa52hj8ccvs4lp6de323][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\validators\FileValidator::extension in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('extension', 'jpg,png,gif')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\validators\FileValidator), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/validators/Validator.php(227): yii\BaseYii::createObject(Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(468): yii\validators\Validator::createValidator('yii\\validators\\...', Object(app\models\Donatur), Array, Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(420): yii\base\Model->createValidators()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(189): yii\base\Model->getValidators()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(816): yii\base\Model->scenarios()
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(434): yii\base\Model->activeAttributes()
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Model.php(494): yii\base\Model->getActiveValidators('nama')
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(926): yii\base\Model->isAttributeRequired('nama')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(402): yii\widgets\ActiveField->addAriaAttributes('<span class="st...')
+#15 /var/www/html/dopen/views/donatur/_form.php(16): yii\widgets\ActiveField->textInput('<span class="st...')
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#19 /var/www/html/dopen/views/donatur/update.php(18): yii\base\View->render('_form', Array)
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#21 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#22 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonaturController))
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\DonaturController))
+#24 /var/www/html/dopen/controllers/DonaturController.php(101): yii\base\Controller->render('update', Array)
+#25 [internal function]: app\controllers\DonaturController->actionUpdate('1')
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#29 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donatur/update', Array)
+#30 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#32 {main}
+2019-07-20 04:24:43 [::1][-][dbbd4msa52hj8ccvs4lp6de323][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    '_csrf' => '294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f\";}'
+    'PHPSESSID' => 'dbbd4msa52hj8ccvs4lp6de323'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; _csrf=294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f%22%3B%7D; PHPSESSID=dbbd4msa52hj8ccvs4lp6de323'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '43302'
+    'REDIRECT_URL' => '/dopen/web/donatur/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/dopen/web/donatur/update?id=1'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563596683.217
+    'REQUEST_TIME' => 1563596683
+]
+2019-07-20 04:37:18 [::1][-][dbbd4msa52hj8ccvs4lp6de323][error][Error] Error: Class 'app\controllers\UploadedFile' not found in /var/www/html/dopen/controllers/DonaturController.php:71
+Stack trace:
+#0 [internal function]: app\controllers\DonaturController->actionCreate()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donatur/create', Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2019-07-20 04:37:18 [::1][-][dbbd4msa52hj8ccvs4lp6de323][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'caYaHM4BAX8Ufwn7RXFyzUOpY2CaVqIVV6Ag64z1CEE-x0hPuUBER0YIMcsmXDWOOeYxBdxh0HQ28EKo6ro8Jw=='
+    'Donatur' => [
+        'nama' => 'Bukan Saya'
+        'username' => 'bukansaya789'
+        'password' => 'bukansaya123'
+        'tgl_lahir' => '02/02/2011'
+        'alamat' => 'Jakarta Utara'
+        'hp' => '089122786555'
+        'email' => 'bukansayaa111@gmail.com'
+        'foto' => ''
+    ]
+]
+
+$_FILES = [
+    'Donatur' => [
+        'name' => [
+            'foto' => 'ar.jpeg'
+        ]
+        'type' => [
+            'foto' => 'image/jpeg'
+        ]
+        'tmp_name' => [
+            'foto' => '/tmp/phpjyWn4K'
+        ]
+        'error' => [
+            'foto' => 0
+        ]
+        'size' => [
+            'foto' => 85412
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    '_csrf' => '294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f\";}'
+    'PHPSESSID' => 'dbbd4msa52hj8ccvs4lp6de323'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '86688'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycw5zSNGsi6GD4GZv'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; _csrf=294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f%22%3B%7D; PHPSESSID=dbbd4msa52hj8ccvs4lp6de323'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '43352'
+    'REDIRECT_URL' => '/dopen/web/donatur/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/donatur/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563597438.599
+    'REQUEST_TIME' => 1563597438
+]
+2019-07-20 04:56:09 [::1][-][dbbd4msa52hj8ccvs4lp6de323][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Donatur::fotoFile in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('fotoFile')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseHtml.php(2227): yii\db\BaseActiveRecord->__get('fotoFile')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseHtml.php(1353): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Donatur), 'fotoFile')
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseHtml.php(1504): yii\helpers\BaseHtml::activeInput('file', Object(app\models\Donatur), 'fotoFile', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(488): yii\helpers\BaseHtml::activeFileInput(Object(app\models\Donatur), 'fotoFile', Array)
+#5 /var/www/html/dopen/views/donatur/_form.php(37): yii\widgets\ActiveField->fileInput()
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#9 /var/www/html/dopen/views/donatur/create.php(17): yii\base\View->render('_form', Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonaturController))
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\DonaturController))
+#14 /var/www/html/dopen/controllers/DonaturController.php(91): yii\base\Controller->render('create', Array)
+#15 [internal function]: app\controllers\DonaturController->actionCreate()
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donatur/create', Array)
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2019-07-20 04:56:09 [::1][-][dbbd4msa52hj8ccvs4lp6de323][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    '_csrf' => '294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f\";}'
+    'PHPSESSID' => 'dbbd4msa52hj8ccvs4lp6de323'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; _csrf=294f24eb78113a0ea7c2091954f6bf601dcfc3a2c2a93b599f88a350290ad470a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OaRSwAE8Rw80c-GCzOReF7raaPbCfO4f%22%3B%7D; PHPSESSID=dbbd4msa52hj8ccvs4lp6de323'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '43616'
+    'REDIRECT_URL' => '/dopen/web/donatur/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/donatur/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563598569.113
+    'REQUEST_TIME' => 1563598569
+]
+2019-07-23 05:42:08 [::1][1][eah3e5ted7a13np3ojee179hi0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Donatur::file in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('file')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseHtml.php(2227): yii\db\BaseActiveRecord->__get('file')
+#2 /var/www/html/dopen/vendor/kartik-v/yii2-krajee-base/src/InputWidget.php(130): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\Donatur), 'file')
+#3 /var/www/html/dopen/vendor/kartik-v/yii2-krajee-base/src/InputWidget.php(109): kartik\base\InputWidget->initInputWidget()
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(109): kartik\base\InputWidget->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('kartik\\date\\Dat...', Array, Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('kartik\\date\\Dat...', Array, Array)
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/ActiveField.php(792): yii\base\Widget::widget(Array)
+#11 /var/www/html/dopen/views/donatur/_form.php(26): yii\widgets\ActiveField->widget('kartik\\date\\Dat...', Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#15 /var/www/html/dopen/views/donatur/update.php(18): yii\base\View->render('_form', Array)
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonaturController))
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(app\controllers\DonaturController))
+#20 /var/www/html/dopen/controllers/DonaturController.php(133): yii\base\Controller->render('update', Array)
+#21 [internal function]: app\controllers\DonaturController->actionUpdate('1')
+#22 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donatur/update', Array)
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#28 {main}
+2019-07-23 05:42:08 [::1][1][eah3e5ted7a13np3ojee179hi0][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'eah3e5ted7a13np3ojee179hi0'
+    '_identity' => '8e401c7404c476377421e41b245b5d3f8fd0c09ffca70acb2ecf43d18f2e9bb8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf' => '9ae279b8a92d5ce5d5830631de7c284848444cf4b2ef41af16e78036203b3105a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"b1l8RWv0vch14XxEgj6AHu6SVK_pqcQo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur/view?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=eah3e5ted7a13np3ojee179hi0; _identity=8e401c7404c476377421e41b245b5d3f8fd0c09ffca70acb2ecf43d18f2e9bb8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf=9ae279b8a92d5ce5d5830631de7c284848444cf4b2ef41af16e78036203b3105a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22b1l8RWv0vch14XxEgj6AHu6SVK_pqcQo%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '56458'
+    'REDIRECT_URL' => '/dopen/web/donatur/update'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/dopen/web/donatur/update?id=1'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563860528.505
+    'REQUEST_TIME' => 1563860528
+]
+2019-07-23 07:40:29 [::1][-][eq53te5ntsop056suvf8krnll6][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: form in /var/www/html/dopen/views/donasi/_form.php:15
+Stack trace:
+#0 /var/www/html/dopen/views/donasi/_form.php(15): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/d...', 15, Array)
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#4 /var/www/html/dopen/views/donasi/create.php(17): yii\base\View->render('_form', Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonasiController))
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\DonasiController))
+#9 /var/www/html/dopen/controllers/DonasiController.php(74): yii\base\Controller->render('create', Array)
+#10 [internal function]: app\controllers\DonasiController->actionCreate()
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donasi/create', Array)
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2019-07-23 07:40:29 [::1][-][eq53te5ntsop056suvf8krnll6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'eq53te5ntsop056suvf8krnll6'
+    '_csrf' => 'af0dd9993b4b7091fb70768be53a8926281f82e26bbbdb9f969a1fc5f9282f7ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0jZGP80Z0d7bVRe_T70Pja7_tCTqU7By\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'hipwye'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=eq53te5ntsop056suvf8krnll6; _csrf=af0dd9993b4b7091fb70768be53a8926281f82e26bbbdb9f969a1fc5f9282f7ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220jZGP80Z0d7bVRe_T70Pja7_tCTqU7By%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '57364'
+    'REDIRECT_URL' => '/dopen/web/donasi/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/donasi/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563867629.431
+    'REQUEST_TIME' => 1563867629
+]
+2019-07-23 10:23:11 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'ArrayHelper' not found in /var/www/html/dopen/views/siswa/_form.php:17
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/siswa/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SiswaController))
+#8 /var/www/html/dopen/controllers/SiswaController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\SiswaController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:23:11 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40748'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877391.878
+    'REQUEST_TIME' => 1563877391
+]
+2019-07-23 10:24:31 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'ArrayHelper' not found in /var/www/html/dopen/views/siswa/_form.php:17
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/siswa/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SiswaController))
+#8 /var/www/html/dopen/controllers/SiswaController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\SiswaController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:24:31 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40776'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877471.583
+    'REQUEST_TIME' => 1563877471
+]
+2019-07-23 10:25:21 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'kartik\widgets\Select2' not found in /var/www/html/dopen/views/siswa/_form.php:41
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/siswa/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SiswaController))
+#8 /var/www/html/dopen/controllers/SiswaController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\SiswaController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:25:21 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40784'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877521.599
+    'REQUEST_TIME' => 1563877521
+]
+2019-07-23 10:25:22 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'kartik\widgets\Select2' not found in /var/www/html/dopen/views/siswa/_form.php:41
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/siswa/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SiswaController))
+#8 /var/www/html/dopen/controllers/SiswaController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\SiswaController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:25:22 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40786'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877522.548
+    'REQUEST_TIME' => 1563877522
+]
+2019-07-23 10:25:49 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'kartik\select\Select2' not found in /var/www/html/dopen/views/siswa/_form.php:41
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/siswa/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SiswaController))
+#8 /var/www/html/dopen/controllers/SiswaController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\SiswaController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:25:49 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40796'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877549.536
+    'REQUEST_TIME' => 1563877549
+]
+2019-07-23 10:25:50 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'kartik\select\Select2' not found in /var/www/html/dopen/views/siswa/_form.php:41
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/siswa/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\SiswaController))
+#8 /var/www/html/dopen/controllers/SiswaController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\SiswaController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:25:50 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40798'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877550.206
+    'REQUEST_TIME' => 1563877550
+]
+2019-07-23 10:27:16 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_dopen`.`siswa`, CONSTRAINT `fk_jenjang_id` FOREIGN KEY (`id`) REFERENCES `jenjang_pendidikan` (`id`)) in /var/www/html/dopen/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `si...')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('siswa', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /var/www/html/dopen/controllers/SiswaController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\SiswaController->actionCreate()
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`db_dopen`.`siswa`, CONSTRAINT `fk_jenjang_id` FOREIGN KEY (`id`) REFERENCES `jenjang_pendidikan` (`id`))
+The SQL being executed was: INSERT INTO `siswa` (`nama`, `alamat`, `tgl_lahir`, `foto`, `jenjang_id`) VALUES ('Husna', 'Bekasi', '12/31/1999', '', 4) in /var/www/html/dopen/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `si...')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `si...')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('siswa', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /var/www/html/dopen/controllers/SiswaController.php(69): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\SiswaController->actionCreate()
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa/create', Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`db_dopen`.`siswa`, CONSTRAINT `fk_jenjang_id` FOREIGN KEY (`id`) REFERENCES `jenjang_pendidikan` (`id`))
+)
+
+2019-07-23 10:27:16 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'LgT-9Wt1-qvIYvLua3yGDHm6U3KjhZ1g5IGZfu29e_VYRbfCADCcmaM1yowPEMxET8wMGZrfyVChsM4kj805nA=='
+    'Siswa' => [
+        'nama' => 'Husna'
+        'alamat' => 'Bekasi'
+        'tgl_lahir' => '12/31/1999'
+        'foto' => ''
+        'jenjang_id' => '4'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '222'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/siswa/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40832'
+    'REDIRECT_URL' => '/dopen/web/siswa/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563877636.724
+    'REQUEST_TIME' => 1563877636
+]
+2019-07-23 10:34:05 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'ArrayHelper' not found in /var/www/html/dopen/views/donasi/_form.php:15
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, NULL)
+#3 /var/www/html/dopen/views/donasi/create.php(17): yii\base\View->render('_form', Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\DonasiController))
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\DonasiController))
+#8 /var/www/html/dopen/controllers/DonasiController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\DonasiController->actionCreate()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('donasi/create', Array)
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2019-07-23 10:34:05 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donatur/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '40898'
+    'REDIRECT_URL' => '/dopen/web/donasi/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/donasi/create'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563878045.105
+    'REQUEST_TIME' => 1563878045
+]
+2019-07-23 10:44:47 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Undefined class constant 'HAS_MANY' in /var/www/html/dopen/models/Siswa.php:56
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1608): app\models\Siswa->attributeLabels()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/data/ActiveDataProvider.php(187): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/data/BaseDataProvider.php(234): yii\data\ActiveDataProvider->setSort(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/data/ActiveDataProvider.php(112): yii\data\BaseDataProvider->getSort()
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/data/BaseDataProvider.php(155): yii\data\BaseDataProvider->getModels()
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(190): yii\data\BaseDataProvider->getCount()
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(158): yii\widgets\BaseListView->renderSummary()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{summary}')
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{summary}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#15 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#20 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\controllers\SiswaController->actionIndex()
+#22 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#28 {main}
+2019-07-23 10:44:46 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41068'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563878686.992
+    'REQUEST_TIME' => 1563878686
+]
+2019-07-23 10:48:04 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Siswa::jenjang in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('jenjang')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('jenjang')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang', NULL)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang.nama')
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Siswa), 1, 0)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Siswa), 1, 0)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Siswa), 1, 0)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Siswa), 1, 0)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#16 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#21 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\SiswaController->actionIndex()
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#29 {main}
+2019-07-23 10:48:04 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41100'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563878884.196
+    'REQUEST_TIME' => 1563878884
+]
+2019-07-23 10:58:14 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\ErrorException:2] yii\base\ErrorException: array_merge(): Argument #2 is not an array in /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php:552
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'array_merge(): ...', '/var/www/html/d...', 552, Array)
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(552): array_merge(Array, Object(Closure))
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(288): yii\grid\GridView->initColumns()
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\grid\GridView->init()
+#4 [internal function]: yii\base\BaseObject->__construct(Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#9 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#14 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#15 [internal function]: app\controllers\SiswaController->actionIndex()
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2019-07-23 10:58:14 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41148'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563879494.659
+    'REQUEST_TIME' => 1563879494
+]
+2019-07-23 10:58:53 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\GridView::value in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:209
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\Component->__set('value', Object(Closure))
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\GridView), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/dopen/views/siswa/index.php(41): yii\base\Widget::widget(Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#12 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#13 [internal function]: app\controllers\SiswaController->actionIndex()
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2019-07-23 10:58:53 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41156'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563879533.396
+    'REQUEST_TIME' => 1563879533
+]
+2019-07-23 11:22:23 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Siswa::jenjang in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('jenjang')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('jenjang')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang', NULL)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang.nama')
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Siswa), 1, 0)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Siswa), 1, 0)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Siswa), 1, 0)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Siswa), 1, 0)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#16 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#21 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\SiswaController->actionIndex()
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#29 {main}
+2019-07-23 11:22:23 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41194'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563880943.704
+    'REQUEST_TIME' => 1563880943
+]
+2019-07-23 11:53:23 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in /var/www/html/dopen/views/siswa/index.php:39
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#3 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\SiswaController->actionIndex()
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2019-07-23 11:53:23 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41230'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563882803.469
+    'REQUEST_TIME' => 1563882803
+]
+2019-07-23 11:53:32 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Siswa::jenjang in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('jenjang')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('jenjang')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang', NULL)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang.nama')
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Siswa), 1, 0)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Siswa), 1, 0)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Siswa), 1, 0)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Siswa), 1, 0)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#16 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#21 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\SiswaController->actionIndex()
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#29 {main}
+2019-07-23 11:53:32 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41236'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563882812.207
+    'REQUEST_TIME' => 1563882812
+]
+2019-07-23 11:54:34 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Siswa::jenjang_pendidikan in /var/www/html/dopen/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('jenjang_pendidi...')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('jenjang_pendidi...')
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang_pendidi...', NULL)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Siswa), 'jenjang_pendidi...')
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/grid/DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(app\models\Siswa), 1, 0)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/grid/Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Siswa), 1, 0)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(525): yii\grid\Column->renderDataCell(Object(app\models\Siswa), 1, 0)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(494): yii\grid\GridView->renderTableRow(Object(app\models\Siswa), 1, 0)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(358): yii\grid\GridView->renderTableBody()
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(326): yii\widgets\BaseListView->renderSection('{items}')
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(301): yii\widgets\BaseListView->run()
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(140): yii\grid\GridView->run()
+#16 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#19 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#20 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#21 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#22 [internal function]: app\controllers\SiswaController->actionIndex()
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#26 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#27 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#29 {main}
+2019-07-23 11:54:34 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41256'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563882874.279
+    'REQUEST_TIME' => 1563882874
+]
+2019-07-23 11:56:29 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][Error] Error: Class 'DetailView' not found in /var/www/html/dopen/views/siswa/index.php:23
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require()
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#2 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#4 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\SiswaController->actionIndex()
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2019-07-23 11:56:29 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41272'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563882989.44
+    'REQUEST_TIME' => 1563882989
+]
+2019-07-23 12:07:24 [::1][-][d1ld9cggt0stfaqjhglg8v6336][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\DataColumn::attributes in /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php:163
+Stack trace:
+#0 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(546): yii\base\BaseObject->__set('attributes', 'jenjang_id.nama')
+#1 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(552): yii\BaseYii::createObject(Array)
+#7 /var/www/html/dopen/vendor/yiisoft/yii2/grid/GridView.php(288): yii\grid\GridView->initColumns()
+#8 /var/www/html/dopen/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#11 /var/www/html/dopen/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 /var/www/html/dopen/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 /var/www/html/dopen/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#14 /var/www/html/dopen/views/siswa/index.php(24): yii\base\Widget::widget(Array)
+#15 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(348): require('/var/www/html/d...')
+#16 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/var/www/html/d...', Array)
+#17 /var/www/html/dopen/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/var/www/html/d...', Array, Object(app\controllers\SiswaController))
+#18 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\SiswaController))
+#19 /var/www/html/dopen/controllers/SiswaController.php(43): yii\base\Controller->render('index', Array)
+#20 [internal function]: app\controllers\SiswaController->actionIndex()
+#21 /var/www/html/dopen/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /var/www/html/dopen/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 /var/www/html/dopen/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#24 /var/www/html/dopen/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('siswa', Array)
+#25 /var/www/html/dopen/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /var/www/html/dopen/web/index.php(12): yii\base\Application->run()
+#27 {main}
+2019-07-23 12:07:24 [::1][-][d1ld9cggt0stfaqjhglg8v6336][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1426526657.1563495512'
+    'PHPSESSID' => 'd1ld9cggt0stfaqjhglg8v6336'
+    '_csrf' => '8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'rooiam'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://localhost/dopen/web/donasi/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.1426526657.1563495512; PHPSESSID=d1ld9cggt0stfaqjhglg8v6336; _csrf=8c024faca0bb4cb6987c7c02c51dee9a26bb299ad85a37855d66d96300907b21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vAI7kEf2kW8bdlJH6v_k9ZT0E1WZbpBi%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Debian) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Debian)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/dopen/web/index.php'
+    'REMOTE_PORT' => '41332'
+    'REDIRECT_URL' => '/dopen/web/siswa'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dopen/web/siswa'
+    'SCRIPT_NAME' => '/dopen/web/index.php'
+    'PHP_SELF' => '/dopen/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1563883644.548
+    'REQUEST_TIME' => 1563883644
+]

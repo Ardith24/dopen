@@ -30,9 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'nama',
             'alamat:ntext',
             'tgl_lahir',
-            'foto',
-            'jenjang_id',
-
+            // 'foto',
+            [
+                'label' => 'Jenjang',
+                'attribute' => 'jenjang_id.nama',
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

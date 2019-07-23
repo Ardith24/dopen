@@ -8,6 +8,8 @@ use app\models\DonaturSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+use app\models\UploadForm;
 
 /**
  * DonaturController implements the CRUD actions for Donatur model.
@@ -16,7 +18,7 @@ class DonaturController extends Controller
 {
     /**
      * {@inheritdoc}
-     */
+     */    
     public function behaviors()
     {
         return [
@@ -66,9 +68,25 @@ class DonaturController extends Controller
     {
         $model = new Donatur();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
+        // if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //     //-----proses awal upload file-------------
+        //     $model->foto = UploadedFile::getInstance($model, 'foto');
+        //     if($model->validate() && !empty($model->foto))
+        //     {
+        //         //$nama = $model->namaBarang.'.'.$model->fotoFile->extension;
+        //         //$model->foto = $nama;
+        //         $model->save();
+        //         $model->foto = "donatur".$model->id.'.'.$model->foto->extension;
+        //         $nama_foto = $model->fotos;
+        //         $model->save();
+        //         $model->foto->saveAs('images/donatur/'.$nama_foto);
+        //     }    
+        //     else{
+        //         $model->save();
+        //     }
+        //     //--------proses akhir upload file-----------
+        //     return $this->redirect(['view', 'id' => $model->id]);
+        // }
 
         return $this->render('create', [
             'model' => $model,
@@ -86,9 +104,31 @@ class DonaturController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
+    //     if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            
+    //         //sebelum update, hapus file foto yang lama jika fotonya diupdate juga
+    //        if(!empty($model->foto)){
+    //        unlink('images/donatur/'.$model->fotos);
+    //        }
+    //        //-----proses awal upload file-------------
+    //        $model->foto = UploadedFile::getInstance($model, 'foto');
+    //        if($model->validate() && !empty($model->foto))
+    //        {
+    //            //$nama = $model->namaBarang.'.'.$model->fotoFile->extension;
+    //            //$model->foto = $nama;
+    //            $model->save();
+    //            $model->fotos = "donatur".$model->id.'.'.$model->foto->extension;
+    //            $nama_foto = $model->fotos;
+    //            $model->save();
+    //            $model->foto->saveAs('images/donatur/'.$nama_foto);
+    //        }    
+    //        else{
+    //            $model->save();
+    //        }
+    //        //--------proses akhir upload file-----------
+
+    //        return $this->redirect(['view', 'id' => $model->id]);
+    //    }
 
         return $this->render('update', [
             'model' => $model,

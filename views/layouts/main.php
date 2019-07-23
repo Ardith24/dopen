@@ -44,11 +44,12 @@ AppAsset::register($this);
             [
                 'label' => 'Master Data',
                 'items' => [
-                     ['label' => 'Donasi Sekarang', 'url' => ['/donasi']],
+                     ['label' => 'Donasi Sekarang', 'url' => ['/donasi/create']],
                      '<li class="divider"></li>',
                      '<li class="dropdown-header">Lihat</li>',
                      ['label' => 'Siswa', 'url' => ['/siswa']],
                      ['label' => 'Donatur', 'url' => ['/donatur']],
+                     ['label' => 'Detail Donasi', 'url' => ['/donasi']],
                 ],
             ],
             Yii::$app->user->isGuest ? (
