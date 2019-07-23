@@ -2,12 +2,13 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use app\models\Jenjang;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SiswaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Siswas';
+$this->title = 'Siswa';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="siswa-index">
@@ -33,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'foto',
             [
                 'label' => 'Jenjang',
-                'attribute' => 'jenjang_id.nama',
+                'attribute' => 'jenjang.nama',
             ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
