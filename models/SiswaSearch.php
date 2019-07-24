@@ -59,12 +59,12 @@ class SiswaSearch extends Siswa
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'tgl_lahir' => $this->tgl_lahir,
             'jenjang_id' => $this->jenjang_id,
         ]);
 
         $query->andFilterWhere(['like', 'nama', $this->nama])
             ->andFilterWhere(['like', 'alamat', $this->alamat])
+            ->andFilterWhere(['like', 'tgl_lahir', $this->tgl_lahir])
             ->andFilterWhere(['like', 'foto', $this->foto]);
 
         return $dataProvider;

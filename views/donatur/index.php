@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\DonaturSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Donaturs';
+$this->title = 'Donatur';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="donatur-index">

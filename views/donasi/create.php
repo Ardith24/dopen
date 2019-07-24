@@ -5,9 +5,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Donasi */
 
-// $this->title = 'Create Donasi';
-// $this->params['breadcrumbs'][] = ['label' => 'Donasis', 'url' => ['index']];
-// $this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Create Donasi';
+$this->params['breadcrumbs'][] = ['label' => 'Donasis', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="donasi-create">
 

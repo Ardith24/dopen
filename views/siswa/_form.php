@@ -19,13 +19,11 @@ use app\models\JenjangPendidikan;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <!-- < ?= $form->field($model, 'id')->textInput() ?> -->
-
     <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'alamat')->textarea(['rows' => 6]) ?>
 
-    <!-- < ?= $form->field($model, 'tgl_lahir')->textInput() ?> -->
+    <!-- < ?= $form->field($model, 'tgl_lahir')->textInput(['maxlength' => true]) ?> -->
     <?= $form->field($model, 'tgl_lahir')->widget(DatePicker::classname(), [
         'options' => ['placeholder' => 'Masukan Tanggal Lahir ...'],
         'pluginOptions' => [
@@ -46,7 +44,7 @@ use app\models\JenjangPendidikan;
         ]
     ]);
     ?>
-
+    
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

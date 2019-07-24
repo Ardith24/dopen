@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use app\models\Jenjang;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\SiswaSearch */
@@ -27,11 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            //'id',
+            // 'id',
             'nama',
             'alamat:ntext',
             'tgl_lahir',
             // 'foto',
+            // 'jenjang_id',
             [
                 'label' => 'Jenjang',
                 'attribute' => 'jenjang.nama',

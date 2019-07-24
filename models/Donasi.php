@@ -13,7 +13,7 @@ use Yii;
  * @property int $jenis_id
  * @property string $create_at
  *
- * @property Jenis $id0
+ * @property Jenis $jenis
  */
 class Donasi extends \yii\db\ActiveRecord
 {
@@ -36,7 +36,7 @@ class Donasi extends \yii\db\ActiveRecord
             [['create_at'], 'safe'],
             [['nama'], 'string', 'max' => 45],
             [['jumlah'], 'string', 'max' => 50],
-            [['id'], 'exist', 'skipOnError' => true, 'targetClass' => Jenis::className(), 'targetAttribute' => ['id' => 'id']],
+            [['jenis_id'], 'exist', 'skipOnError' => true, 'targetClass' => Jenis::className(), 'targetAttribute' => ['jenis_id' => 'id']],
         ];
     }
 
@@ -57,8 +57,8 @@ class Donasi extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getId0()
+    public function getJenis()
     {
-        return $this->hasOne(Jenis::className(), ['id' => 'id']);
+        return $this->hasOne(Jenis::className(), ['id' => 'jenis_id']);
     }
 }

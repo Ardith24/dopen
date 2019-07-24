@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\DonasiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Donasis';
+$this->title = 'Detail Donasi';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="donasi-index">
@@ -26,10 +26,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            // 'id',
             'nama',
             'jumlah',
-            'jenis_id',
+            // 'jenis_id',
+            [
+                'label' => 'jenis',
+                'attribute' => 'jenis.nama',
+            ],
             'create_at',
 
             ['class' => 'yii\grid\ActionColumn'],

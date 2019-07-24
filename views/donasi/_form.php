@@ -15,10 +15,8 @@ use kartik\select2\Select2;
     <?php
     $data_jenis = ArrayHelper::map(Jenis::find()->asArray()->all(),'id','nama');
     ?>
-    
-    <?php $form = ActiveForm::begin(); ?>
 
-    <!-- < ?= $form->field($model, 'id')->textInput() ?> -->
+    <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 
@@ -35,7 +33,7 @@ use kartik\select2\Select2;
     ]);
     ?>
 
-    <!-- < ?= $form->field($model, 'create_at')->textInput() ?> -->
+    <?= $form->field($model, 'create_at')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

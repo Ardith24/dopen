@@ -14,7 +14,7 @@ use Yii;
  * @property string $foto
  * @property int $jenjang_id
  *
- * @property JenjangPendidikan $id0
+ * @property JenjangPendidikan $jenjang
  */
 class Siswa extends \yii\db\ActiveRecord
 {
@@ -34,10 +34,9 @@ class Siswa extends \yii\db\ActiveRecord
         return [
             [['nama', 'alamat', 'tgl_lahir', 'jenjang_id'], 'required'],
             [['alamat'], 'string'],
-            [['tgl_lahir'], 'safe'],
             [['jenjang_id'], 'integer'],
-            [['nama', 'foto'], 'string', 'max' => 45],
-            [['id'], 'exist', 'skipOnError' => true, 'targetClass' => JenjangPendidikan::className(), 'targetAttribute' => ['id' => 'id']],
+            [['nama', 'tgl_lahir', 'foto'], 'string', 'max' => 45],
+            [['jenjang_id'], 'exist', 'skipOnError' => true, 'targetClass' => JenjangPendidikan::className(), 'targetAttribute' => ['jenjang_id' => 'id']],
         ];
     }
 
@@ -59,8 +58,8 @@ class Siswa extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getId0()
+    public function getJenjang()
     {
-        return $this->hasOne(JenjangPendidikan::className(), ['id' => 'id']);
+        return $this->hasOne(JenjangPendidikan::className(), ['id' => 'jenjang_id']);
     }
 }
